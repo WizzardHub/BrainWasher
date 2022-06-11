@@ -62,11 +62,20 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="BrainHttp.cs" />
+        <Compile Include="Enums\CheckerStatus.cs" />
+        <Compile Include="Enums\PentestingInput.cs" />
+        <Compile Include="Enums\ProxyProtocol.cs" />
+        <Compile Include="Models\Checker.cs" />
+        <Compile Include="Models\Combo.cs" />
+        <Compile Include="Models\Config.cs" />
+        <Compile Include="Models\Proxy.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Extensions\Http" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
